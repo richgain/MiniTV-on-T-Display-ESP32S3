@@ -50,18 +50,3 @@ ffmpeg -i honda_scale.mp4 -c:a mp3 -c:v cinepak -q:v 10 -vf "fps=15,scale=168:88
 
 ffmpeg -i honda_rotate.mp4 -c:a mp3 -c:v cinepak -q:v 10 -vf "fps=15" HondaRotateAviMp3Cinepak168p15fps.avi
 
-ffmpeg -i TinyCashback.mp4 -ss 20:33.00 -to 27:10.00 -c:a mp3 -c:v cinepak -q:v 10 -vf "fps=30" TinyCashbackClip.avi
-
-
-
-### AMOLED	(N.B. - second dimension MUST be divisible by 4)
-
-ffmpeg -i NataliaAndreevaAmoled.mp4 -c:a mp3 -c:v cinepak -q:v 11 -vf "fps=30" NataliaAndreevaAmoled.avi
-
-ffmpeg -i input/reddit01.mp4 -c:a mp3 -c:v cinepak -q:v 11 -vf "fps=30" output/reddit01.avi
-
-ffmpeg -i input\S3reddit06.mp4 -c:a mp3 -c:v cinepak -q:v 11 -vf "fps=30" output\S3reddit06.avi
-
-### no audio
-
-ffmpeg -i input/reddit04.mp4 -c:v cinepak -q:v 11 -vf "fps=15" output/reddit04.avi
